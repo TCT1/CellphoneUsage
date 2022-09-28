@@ -117,6 +117,20 @@ nav li a{
     padding: 15px;
 }
 
+footer{
+    margin-top: 60px;
+    background-color: antiquewhite;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits{
+    color: black;
+}
+
 @media (max-width: 1150px){
     .texto-interior{
         left: 20%;
