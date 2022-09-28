@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+p{
+	font-size: 1.4rem;
+	margin:0 0 24px 0
+}
+
+header{
+	left: 35%;
+	position: fixed;
+	top:2rem;
+	width: 25%;
+	z-index: 1111
+}
+
+nav ul{
+	display: table;
+	list-style-type: none;
+	width:100%;
+}
+
+nav li{
+	display: table-cell;
+	text-align: center
+}
+
+nav li a{
+    background-color:rgba(50,50,50,.2);
+	border:2px solid #fff;
+	color:tomato;
+	font-family: helvetica;
+	font-size: 2rem;
+	padding: 10px;
+	text-decoration: none
+}
+.parallas, .main, .texto{margin:0 auto}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:40rem;
+	max-width: 100%;
+	position: relative
+}
+
+.texto-interior{
+    font-family: 'Titan One', cursive;
+	color:rgb(0, 0, 0);
+	font-size: 4rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:25%;
+	width: 60%;
+}
+.img-uno{background-image: url('Resources/celular.jpg')}
+
+
+.texto{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+	padding:5%;
+	width: 70%;
+}
+
+.Sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section{
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.Section--edit{
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.SectionImg{
+    width: 350px;
+    height: auto;
+}
+
+.SectionText{
+    padding: 15px;
+}
+
+@media (max-width: 1150px){
+    .texto-interior{
+        left: 20%;
+    }
+    .Titulo{
+        display: flex;
+        font-size: 4rem;
+    }
+    .texto{
+        font-size: 20px;
+    }
+    .Section{
+        width: 80%;
+        flex-direction: column;
+    }
+    
+    .Section--edit{
+        width: 80%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px){
+    .texto-interior{
+        left: 10%;
+    }
+    .Titulo{
+        font-size: 3rem;
+    }
+    .texto{
+        font-size: 15px;
+    }
+    .parallax{
+        height:30rem;
+    }
+}
+
+@media (max-width: 408px){
+    .Titulo{
+        font-size: 2rem;
+    }
+    .texto{
+        font-size: 10px;
+    }
+    .SectionImg{
+        width: 100%;
+        height: 40%;
+    }
+}
